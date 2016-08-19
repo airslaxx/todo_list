@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/main">
+        <file>main.qml</file>
+        <file>NavigationMenu.qml</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="menu_48_48.png">icons/menu_48_48.png</file>
+    </qresource>
+    <qresource prefix="/common">
+        <file alias="ToolBar.qml">common/ToolBar.qml</file>
+        <file alias="Skins.qml">common/Skins.qml</file>
+        <file alias="ListItem.qml">common/ListItem.qml</file>
+        <file alias="TextLabel.qml">common/TextLabel.qml</file>
+    </qresource>
+    <qresource prefix="/colors">
+        <file alias="c600.png">colors/c600.png</file>
+        <file alias="c800.png">colors/c800.png</file>
+        <file alias="c50.png">colors/c50.png</file>
+    </qresource>
+    <qresource prefix="/common_skins">
+        <file alias="bottom_to_top_shadow_5.png">common_skins/bottom_to_top_shadow_5.png</file>
+        <file alias="left_to_right_shadow_5.png">common_skins/left_to_right_shadow_5.png</file>
+        <file alias="right_to_left_shadow_5.png">common_skins/right_to_left_shadow_5.png</file>
+        <file alias="top_to_bottom_shadow_10.png">common_skins/top_to_bottom_shadow_10.png</file>
+    </qresource>
+</RCC>
