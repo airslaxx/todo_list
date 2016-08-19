@@ -1,4 +1,4 @@
-import QtQuick 2.5
+import QtQuick 2.6
 
 Text
 {
@@ -9,5 +9,5 @@ Text
     }
     antialiasing: true
     horizontalAlignment: Text.AlignHCenter
-    verticalAlignment: Text.AlignVCenter
+    verticalAlignment: Text.AlignVCenter    
 }

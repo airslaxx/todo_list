@@ -1,5 +1,7 @@
-import QtQuick 2.5
-import QtQuick.Layouts 1.1
+import QtQuick 2.6
+import QtQuick.Layouts 1.2
+import QtQuick.Controls 2.0
+import QtQuick.Controls.Material 2.0
 import "qrc:/common" as Common
 
 FocusScope
@@ -25,13 +27,16 @@ FocusScope
         {
             id: menuTitle
 
-            Layout.leftMargin: 10
             Layout.minimumHeight: 50
             Layout.preferredHeight: 50
             Layout.maximumHeight: 50
 
+            Layout.fillWidth: true
+
             font.pixelSize: skins.title.fontPixelSize
-            horizontalAlignment: Text.AlignLeft | Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            clip: true
         }
 
         ListView
@@ -43,15 +48,16 @@ FocusScope
 
             model: 20
             spacing: 10
+
             delegate:
             Rectangle
             {
-               anchors.left: parent.left
-               anchors.right: parent.right
-               height: 40
-               anchors.margins: 5
+               width: parent.width - 10
+               height: 50
                color: "lightgray"
             }
+
+            ScrollBar.vertical: ScrollBar { }
         }
     }
 
